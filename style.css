@@ -1,0 +1,448 @@
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
+	color: #505962;
+	background-color: rgb(41, 37, 37);
+	
+}
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+	height: 1rem;
+	margin-top: -4rem;
+	content: "";
+	display: block;
+}
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+	padding: 1rem;
+}
+
+/*============= NAVIGATION =============*/
+
+.navbar {
+	padding: .7rem 1rem;
+	text-transform: uppercase;
+	font-size: .9rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	transition: background-color .5s ease 0s;
+}
+.navbar-brand img {
+	height: 4rem;
+}
+.svg-inline--fa.fa-w-14 {
+	color: rgb(26, 11, 11);
+	font-size: 1.6rem;
+}
+.navbar-nav li {
+	padding-right: .8rem;
+}
+.navbar-nav .nav-link {
+	color: white;
+	padding-top: .8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+	color: #1ebba3;
+}
+.navbar.solid {
+	background: rgba(0, 0, 0, 0.7)!important;
+	transition: background-color 1s ease 0s;
+}
+
+/*============= LANDING PAGE =============*/
+
+.home-inner {
+	background-image: url('portfoliofiles/themes/img/header-bg.jpg');
+}
+
+.caption {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 38%;
+	z-index: 1;
+}
+.caption h1 {
+	color: rgb(255, 255, 255);
+	font-size: 4.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: .3rem;
+	text-shadow: .1rem .1rem .8rem black;
+	padding-bottom: 1rem;
+}
+.caption h3 {
+	color: white;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-shadow: .1rem .1rem .5rem black;
+	padding-bottom: 2rem;
+}
+.btn-lg {
+	border-width: medium;
+	border-radius: 0;
+	padding: .8rem 1.5rem;
+	font-size: 1.1rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	display: inline-block!important;
+	color: whitesmoke
+}
+
+/*============= FEATURES SECTION =============*/
+
+.narrow {
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+.btn-sm {
+	border-width: medium;
+	border-radius: 0;
+	padding: .5rem 1.1rem;
+	font-size: .9rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 1rem;
+}
+.btn-turquoise {
+	border-color: #1ebba3;
+	background-color: #1ebba3;
+	color: white;
+}
+.btn-turquoise:hover,
+.btn-turquoise:focus {
+	border-color: #189582;
+	background-color: #189582;
+	color: white;
+}
+.jumbotron {
+	margin-bottom: 0;
+	border-radius: 0;
+	padding: 1rem 0 3rem;
+}
+h3.heading {
+	font-size: 1.9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 1.9rem;
+}
+.heading-underline {
+	width: 3rem;
+	height: .2rem;
+	background-color: #1ebba3;
+	margin: 0 auto 2rem;
+}
+.feature {
+	text-align: center;
+}
+.feature .fa-layers {
+	color: #1ebba3;
+	margin: 0 auto;
+	width: 3.9rem;
+	height: 6rem;
+}
+.feature h3 {
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	padding-bottom: .4rem;
+}
+.feature p {
+	font-size: 1.1rem;
+}
+
+/*============= FEATURE BACKGROUND IMG DARK  =============*/
+
+#fixed {
+	background-image: url('portfoliofiles/themes/img/fixed/04-full.jpg');
+	z-index: -1;
+}
+.dark {
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: 7rem 2rem;
+	text-align: center;
+	z-index: 1000!important;
+}
+.dark h3, .dark p {
+	color: #e9ecef;
+}
+
+/*============= PORTFOLIO SECTION =============*/
+
+.row.padding {
+	padding: 2rem 0 1rem;
+}
+
+img.example-image {
+	max-width: 100%;  
+}
+
+.row.no-padding [class*=col-] {
+	padding: 0;
+}
+
+.portfolio-item img:hover {
+	transform: scale(1.3);
+	cursor: zoom-in;
+}
+.portfolio-item img {
+	transition: transform .4s ease;
+}
+.portfolio-item {
+	overflow: hidden;
+}
+
+/*============= PRICING SECTION =============*/
+
+.pricing-column {
+	background-color: white;
+	padding: 2rem;
+	border-top: .2rem solid #1ebba3;
+	box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.075);
+	transition: transform .7s ease;
+	overflow: hidden;
+	position: relative;
+}
+.pricing-column:hover {
+	transform: scale(1.1);
+}
+.pricing-column h3 {
+	padding: 1rem;
+	border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
+}
+.pricing-column p {
+	opacity: .8;
+	margin-top: 1.3rem;
+}
+.pricing-column h4 {
+	font-size: 1.1rem;
+	padding: .4rem;
+}
+.pricing-column .item {
+	font-weight: 700;
+}
+.pricing-column h1 {
+	padding: .8rem 0;
+}
+.ribbon {
+	background-color: #6c757d;
+	color: white;
+	width: 10rem;
+	height: 2rem;
+	font-size: .8rem;
+	font-weight: 700;
+	padding-top: .4rem;
+	position: absolute;
+	right: -2.8rem;
+	top: 1.6rem;
+	transform: rotate(45deg);
+	box-shadow: 0 0 .2rem rgba(0, 0, 0, 0.25);
+}
+
+/*============= TEAM SECTION FIXED BG IMG LIGHT =============*/
+
+#fixed-2 {
+	background-image: url('portfoliofiles/themes/img/fixed/hands.JPG');
+	z-index: -1;
+}
+.light {
+	background-color: rgba( 255, 255, 255, .85);
+	padding: 3rem 2rem 2rem;
+	z-index: 1000!important;
+}
+.card {
+	align-self: center;
+	border-radius: 0;
+	border: .1rem solid rgba(0, 0, 0, .075);
+	box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
+	margin: 0 1rem;
+	transition: transform .4s ease;
+}
+.card-body p {
+	color: blue
+}
+.card-img-top {
+	
+	width: 60%;
+	height: auto;
+}
+.card:hover {
+	transform: scale(.85);
+}
+.card h4 {
+	color: rgb(10, 1, 1);
+	font-weight: 700;
+}
+.card h5 {
+	color: #060707;
+}
+.card p {
+	border-top: .1rem solid rgba(59, 50, 50, 0.1);
+	border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	margin: 1rem 0 1.5rem;
+}
+.card svg.svg-inline--fa {
+	color: #1ebba3!important;
+	font-size: 1.3rem;
+	width: 2rem;
+}
+.card svg.svg-inline--fa:hover {
+	color: #6c757d!important;
+}
+
+/*=============     .owl-dot.active span,
+.owl-dot:hover span {
+	background: #1ebba3!important;
+}                  SKILLS SECTION =============*/
+
+.skill h3 {
+	color: #1ebba3;
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin: 1rem 0 .5rem;
+}
+.skill p {
+	font-size: 1.1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/*============= CLIENTS SECTION =============*/
+
+.clients img {
+	width: 50%;
+	height: auto;
+	border-radius: 50%;
+	transition: transform .3s ease;
+}
+.clients img:hover {
+	transform: scale(0.95);
+}
+blockquote .svg-inline--fa {
+	margin: 1rem;
+	color: #1ebba3;
+}
+.clients-hr {
+	border-top: .05rem solid #1ebba3;
+}
+
+/*============= CONTACT SECTION =============*/
+
+footer {
+	background: url('portfoliofiles/themes/img/footer/iot.png') no-repeat;
+	/*background-color: #40474e;*/
+	background-size: cover;
+	color: white;
+}
+footer .row {
+	background-color: rgba(57, 63, 70, 0.85);
+	padding: 1rem 2rem 3rem;
+}
+footer img {
+	height: 2rem;
+	margin: 1.5rem 0;
+}
+footer a {
+	color: white;
+}
+footer svg.svg-inline--fa {
+	font-size: 1.6rem;
+	margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover {
+	color: #1ebba3!important;
+}
+footer h3 {
+	text-transform: uppercase;
+	margin: 1.5rem 0;
+}
+
+
+/*--- Contact Form --*/
+.sub {
+	color: whitesmoke;
+}
+
+.form-group {
+	margin-bottom: 1.3rem;
+}
+.form-control {
+	background-color: #53595f;
+	border-radius: 0;
+	border: .15rem solid #666b71;
+	color: white!important;
+	font-size: 1.1rem;
+}
+.form-control:focus {
+	background: #53595f;
+	border: .15rem solid #666b71;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+	color: #b2b5b8!important;
+}
+input.btn {
+	cursor: pointer;
+}
+hr.socket {
+	color: black;
+	border-top: .2rem solid; /* #666b71; */
+	width: 100%;
+}
+
+
+
+/*============= TOP SCROLL =============*/
+
+.top-scroll svg.svg-inline--fa {
+	font-size: 3rem;
+	height: 1.7rem;
+	color: #53595f;
+	background: white;
+}
+a.top-scroll {
+	right: 1.2rem;
+	bottom: 1.2rem;
+	position: fixed;
+	opacity: .3;
+	z-index: 1000;
+	display: none;
+}
+a.top-scroll:hover {
+	opacity: .5;
+}
+
+
+h4 {
+	color: whitesmoke
+}
+
