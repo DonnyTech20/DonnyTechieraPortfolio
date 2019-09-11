@@ -279,20 +279,20 @@ img.example-image {
 	padding: 3rem 2rem 2rem;
 	z-index: 1000!important;
 }
-.card {
+  .card {
 	align-self: center;
 	border-radius: 0;
 	border: .1rem solid rgba(0, 0, 0, .075);
 	box-shadow: 0 0 .8rem rgba(0, 0, 0, .075);
 	margin: 0 1rem;
 	transition: transform .4s ease;
-}
+} 
 .card-body p {
 	color: blue
 }
 .card-img-top {
 	
-	width: 60%;
+	width: 20%;
 	height: auto;
 }
 .card:hover {
