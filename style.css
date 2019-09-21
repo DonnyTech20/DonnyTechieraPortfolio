@@ -80,7 +80,9 @@ body {
 .home-inner {
 	background-image: url('portfoliofiles/themes/img/header-bg.jpg');
 }
-
+.col-12 {
+	color: rgb(0, 183, 255)
+}
 .caption {
 	width: 100%;
 	max-width: 100%;
