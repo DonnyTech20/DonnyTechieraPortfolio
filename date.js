@@ -12,4 +12,4 @@ greeting = "Good Afternoon & Welcome!";
     greeting = 'Welcome!';
 }
 
-document.getElementById('first').innerHTML = today;
+document.getElementById('now').innerHTML = today;
