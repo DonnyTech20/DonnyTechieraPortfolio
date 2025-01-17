@@ -19,6 +19,42 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#chatbot-bubble {
+    width: 50px;
+    height: 50px;
+    background-color: #0078d7;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chatbot-iframe {
+    width: 300px;
+    height: 400px;
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chatbot-container.open #chatbot-iframe {
+    display: block;
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 body {

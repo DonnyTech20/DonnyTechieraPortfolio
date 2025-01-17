@@ -177,3 +177,7 @@ $(document).ready(function(){
 });
 
 */
+function toggleChatbot() {
+  const container = document.getElementById('chatbot-container');
+  container.classList.toggle('open');
+}
